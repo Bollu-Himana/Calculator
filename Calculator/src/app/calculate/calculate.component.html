@@ -1,0 +1,78 @@
+<html><head>
+    <style>
+       .title{
+       margin-bottom: 10px;
+       text-align:center;
+       width: 210px;
+       color:white;
+       background-color:brown;
+       border: solid black 2px;
+       }
+ 
+       input[type="button"]
+       {
+       background-color:gray;
+       color: black;
+       border: solid black 2px;
+       width:100%
+       }
+ 
+       input[type="text"]
+       {
+       background-color:white;
+       border: solid black 2px;
+       width:100%
+       }
+    </style>
+ </head>
+     <body>
+       <div class = title >Calculator</div>
+       <table >
+         
+     <tr>
+     
+        <td><input type="button" value="1" (click)="display('1')"> </td>
+        <td><input type="button" value="2" (click)="display('2')"> </td>
+        <td><input type="button" value="3" (click)="display('3')"> </td>
+     </tr>
+     <tr>
+        <td><input type="button" value="4" (click)="display('4')" > </td>
+        <td><input type="button" value="5"(click)="display('5')"> </td>
+        <td><input type="button" value="6"(click)="display('6') "> </td>
+     </tr>
+     <tr>
+        <td><input type="button" value="7"(click)="display('7')"> </td>
+        <td><input type="button" value="8"(click)="display('8')" > </td>
+        <td><input type="button" value="9"(click)="display('9')" > </td>
+     </tr>
+     <tr>
+        <td><input type="button" value="0"(click)="display('0')"> </td>
+        <td><input type="button" value="+"(click)="display('+')" > </td>
+        <td><input type="button" value="-"(click)="display('-')" > </td>
+        
+ 
+     </tr>
+     <tr>
+       <td><input type="button" value="*"(click)="display('*')" > </td>
+       <td><input type="button" value="/"(click)="display('/')" > </td>
+ 
+       <td><input type="button" value="=" (click)="evalute()" > </td>
+     </tr>
+  </table>
+  <table>
+    <tr>
+      <p> Displaying:</p><td colspan="3"><input type="" value={{disp}} ></td>
+   </tr>
+  </table>
+  <html>
+     <body>
+ <table>
+     <tr>
+       <p>Result:</p><td colspan="3"><input type="" value="{{a}}" /></td>
+    </tr>
+   </table>
+ </body>
+   </html>
+ 
+ </body>
+  </html>
